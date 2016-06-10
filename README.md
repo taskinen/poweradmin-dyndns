@@ -20,6 +20,7 @@ password = MyPassword
 domain = myhostname.domain.tld
 poweradmin_url = https://example.com/poweradmin
 ip_lookup_url = http://checkip.dy.fi/
+verbose = True
 ```
 
 `login` is your Poweradmin username, `password` is your password, `domain` is your hostname with full domainname which you want point to your current IP address.
@@ -27,3 +28,5 @@ ip_lookup_url = http://checkip.dy.fi/
 You must know the URL of your hosting provider's Poweradmin control panel (usually ends with /poweradmin), set that as `poweradmin_url`.
 
 You can use any publicly available IP-checking tool, which outputs your external IP address as plain text. This script will try to parse its output and use the first IPv4 looking IP address. In the configuration example `ip_lookup_url` is defined as `http://checkip.dy.fi/` which I have found satisfactory. Feel free to use your own.
+
+If you want verbose output, set `verbose` to `True`, otherwise `False`.
