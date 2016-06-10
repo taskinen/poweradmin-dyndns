@@ -4,3 +4,4 @@ password = MyPassword
 domain = myhostname.domain.tld
 poweradmin_url = https://example.com/poweradmin
 ip_lookup_url = http://checkip.dy.fi/
+verbose = True
